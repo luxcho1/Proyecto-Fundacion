@@ -1,3 +1,7 @@
-.hola {
-    text-align: center;
+p.texto {
+    color: rgb(0, 247, 255);
+}
+
+#titulo {
+    color: rgb(0, 26, 255);
 }
