@@ -14,19 +14,20 @@
 
     <title>Proyecto Fundacion</title>
 </head>
-<body>
+<body onload="saludar()">
     <!--========================================================== -->
-                        <!-- ENCABEZADO -->
+                        <!-- HEADER -->
     <!--========================================================== -->
-    <header class="container-fluid contei bg-danger d-flex justify-content-center">
+    <header class="container-fluid text-center bg-danger d-flex justify-content-center">
         <h1 class="mb-2 p-1 fs-5">¿Te sientes solo? Recuerda recurrir a nuestro fono de ayuda +56969166242</h1>
+      <!---<p class="fst-italic" id="saludo"></p>-->
     </header>
 
     <!--========================================================== -->
                         <!-- NAVBAR -->
     <!--========================================================== -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top " >
         <div class="container-fluid m-4 ps-5" id="navbar">
           <a class="navbar-brand" href="index.html">Inicio</a>
           <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +35,10 @@
           </button>
           
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav">
+            <ul class="navbar-nav">
               
                 <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="info.html">Sobre Nuestra Fundacion</a>
+                <a class="nav-link active" aria-current="page" href="info.html">Sobre Nuestra Fundacion</a>
               </li>
 
               <li class="nav-item">
@@ -90,7 +91,7 @@
                         <!-- Texto 1 -->
       <!--========================================================== -->
         <section>
-          <div class="container">
+          <div class="container" id="Titulo1">
                 <div class="row">
                     <h1 class="pt-5 justify-content-center m-auto d-flex flex-column">
                         Fundada en el año 2022, nuestra mision siempre fue el pensar en el bienestar de las personas, y preocuparnos sobre la salud mental. Un apartado que no esta muy tomado en cuenta en nuestro pais. Contamos con expertos que estaran dispuestos para ayudarte.
@@ -104,8 +105,9 @@
         <!--========================================================== -->
 
         <section class="container-fluid">
+          <h2 class="text-center" id="Titulo2">Nuestros Expertos</h2>
           <div class="row">
-              <div class="col-6 bg-danger">
+              <div class="col-xl-6 container-fluid bg-danger">
                 <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -122,7 +124,7 @@
                 </div>
               </div>
 
-              <div class="col-6 bg-secondary">
+              <div class="col-xl-6 bg-secondary">
                 <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -139,7 +141,7 @@
                 </div>
               </div>
 
-              <div class="col-6 bg-warning">
+              <div class="col-xl-6 bg-warning">
                 <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -156,7 +158,7 @@
                 </div>
               </div>
 
-              <div class="col-6 bg-black">
+              <div class="col-xl-6 bg-black">
                 <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
@@ -176,7 +178,7 @@
 
 
           <div class="row">
-            <div class="col-6 m-auto bg-secondary mb-5" style="max-width: 900px;">
+            <div class="col-xl-6 m-auto bg-secondary mb-5" style="max-width: 900px;">
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -217,24 +219,41 @@
               </div>
             </div>
           </div>
-            
-
-            
-
-            
-  
-              
-
-
-          </div>
         </section>
 
+
         <!--========================================================== -->
+                        <!-- Texto 2 -->
+        <!--========================================================== -->
+
+        <section class="container-fluid">
+          <div class="row">
+            <h2 class="text-center" id="Titulo3">Nuestras opiniones en los medios</h2>
+
+            <div class="col-xxl-4 bg-warning">
+              <img class="img-fluid rounded mx-auto d-block mb-5" src="https://pbs.twimg.com/profile_images/1384306311647490048/G8sO2gPu_400x400.jpg" alt="lun">
+              <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
+            </div>
+
+            <div class="col-xxl-4 bg-secondary">
+              <img class="img-fluid rounded mx-auto d-block mb-5" src="https://descuentos.cl/wp-content/uploads/2021/06/LogoLaTercera.png" alt="lun">
+              <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
+            </div>
+
+            <div class="col-xxl-4 bg-danger">
+              <img class="img-fluid rounded mx-auto d-block mb-5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1280px-Logo_DuocUC.svg.png" alt="lun">
+              <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!--========================================================== -->
                         <!-- FOOTER -->
         <!--========================================================== -->
 
         <footer>
-          <div class="container-fluid bg-dark p-3 text-white">
+          <div class="container-fluid bg-dark p-3 text-white" id="correo-footer">
             <div class="row">
               <div class="col-md-4 m-auto mb-5">
                 <form>
@@ -250,14 +269,14 @@
             </div>
 
             <div class="row">
-              <div class="col-md-4 text-center">
+              <div class="col-md-4 text-center" id="menu-footer">
                 <ul class="nav flex-column">
-                  <h3>Menu</h3>
+                  <h3>Menú</h3>
                   <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="info.html">Sobre nuestra fundacion</a>
+                      <a class="nav-link" href="info.html">Sobre Nuestra fundacion</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="contacto.html">Contacto</a>
@@ -271,7 +290,7 @@
               </ul>
               </div>
 
-              <div class="col-md-4 text-center">
+              <div class="col-md-4 text-center" id="paginas-footer">
                 <ul class="nav flex-column">
                   <h3>Mas paginas de ayuda</h3>
                   <li class="nav-item">
@@ -286,9 +305,9 @@
               </ul>
               </div>
 
-              <div class="col-md-4 text-center">
+              <div class="col-md-4 text-center" id="contacto-footer">
                 <ul class="nav flex-column">
-                  <li class="nav-item">
+                  <li class="nav-item mx-auto">
                     <h3>Contacto</h3>
                     <p>Calle: Los Estanques 2012</p>
                     <p>Comuna: Providencia</p>
@@ -306,6 +325,9 @@
             </div>
           </div>
         </footer>
-      </main>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+      <script src="assets/js/index.js"></script>      
 </body>
 </html>

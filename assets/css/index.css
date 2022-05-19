@@ -19,13 +19,66 @@ body{
     background-color: #ff9c9c;
 }
 
-#card2{
-    margin-top: 125px;
-    margin-bottom: 125px;
-    text-align: right;
-}
-
 #boton{
     font-size: 23px !important;
     font-weight: 500;
+}
+
+#Titulo1{
+    margin-top:60px;
+}
+
+#Titulo2{
+    font-size: 70px;
+    margin-top: 150px;
+}
+
+#Titulo3{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#correo-footer label{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#menu-footer h3{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+#menu-footer a{
+    color: gray !important;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#paginas-footer h3{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+#paginas-footer a{
+    color: gray !important;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+
+#contacto-footer h3{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+#contacto-footer p{
+    color: gray !important;
+    font-weight: 500;
+    margin-top: -17px;
 }
