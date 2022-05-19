@@ -214,6 +214,7 @@ formulario.addEventListener('submit', (event) => {
   event.preventDefault();
   alertaInfo();
   limpiarForm();
+  
   }
 
 );
