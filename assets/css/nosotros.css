@@ -99,53 +99,6 @@ body{
   }
 
 /* Hover */
-.contenedor{
-    width: 500px;
-    height: 500px;
-    padding: 1rem;
-}
-
-.img-content{
-    position: relative;
-    overflow: hidden;
-}
-
-.img-content img{
-    width: 100%;
-}
- 
-.contenedor:hover .texto{
-    left: 0;
-}
-
-
-.texto {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 500px;
-    height: 500px;
-    background: rgba(0, 0, 0,.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-h1{
-    padding: 1rem 2rem;
-    background: transparent;
-    color:white;
-    cursor: pointer;
-}
-
-.h1:hover{
-    background: navy;
-    color: aliceblue;
-    transition: all 300ms;
-}
-
-/* Hover */
 figure.snip0018 {
   font-family: 'Raleway', Arial, sans-serif;
   color: #fff;
@@ -266,5 +219,35 @@ figure.snip0018:hover figcaption::before {
   transition-delay: 0s;
 }
 
-
-
+/* Probando */
+.slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+  }
+  .slider .card .img{
+    height: 200px;
+    width: 100%;
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card .content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .card .content p{
+    text-align: justify;
+    margin: 10px 0;
+  }
