@@ -4,6 +4,11 @@ body{
     
 }
 /* Navbar */
+
+#centrar{
+  display: grid;
+  place-content: center;;
+}
 #navbar a{
     color: azure;
     font-size: 23px;
@@ -105,9 +110,9 @@ figure.snip0018 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 400px;
-  max-width: 400px;
-  max-height: 400px;
+  min-width: 300px;
+  max-width: 500px;
+  max-height: 500px;
   width: 100%;
   background: #000000;
   text-align: center;

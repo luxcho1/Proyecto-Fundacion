@@ -55,7 +55,6 @@
       <header class="container-fluid colorC d-flex justify">
         <p id="parrafo" class="text-mb-0 p-2 fs-3"> Sobre Nosotros</p>
         </header>
-    </div>
     <div style="text-align:center">
       <img src="https://www.duoc.cl/wp-content/uploads/2020/05/sede_san_joaquin-1920x600.jpg" class="img-fluid" alt="...">
       <br>
@@ -66,7 +65,6 @@
     <!--========================================================== -->
                         <!-- PARRAFO -->
     <!--========================================================== -->
-    <section>
     <div class="container-fluid">
       <div class="row">
         <div class="col-1"> </div>
@@ -78,7 +76,6 @@
         <div class="col-3"> </div>
       </div>
     </div>
-    </section>
     <br>
     <br>
     <a class="btn colorB centrado" id="boton" href="contacto.html" role="button">Contáctanos</a>
@@ -89,8 +86,7 @@
                         <!-- HOOVER -->
     <!--========================================================== -->
 <div class="container-fluid">
-  <div class="row">
-        <center>
+  <div class="row" id="centrar">
           <figure class="snip0018" >
             <img src="https://picsum.photos/900/900" class="img-fluid" alt="sample5"/>
             <figcaption>
@@ -98,7 +94,8 @@
               <div><p>Ayudar a las personas con discapacidades mentales a tener una mejor vida.</p></div>
             </figcaption>     
           </figure>
-        </center>
+        </div>
+      </div>
     <br>
     <br>
     <!--========================================================== -->
@@ -106,15 +103,15 @@
     <!--========================================================== -->
     <div class="container-fluid">
        <p class="text-danger fs-1 text-center">Equipo</p>
+    </div>
     <br>
     <br>
     <br>
     <!--========================================================== -->
-                        <!-- Probando cosas -->
+                        <!-- Integrantes -->
     <!--========================================================== -->
     <div class="container-fluid">
       <div class="row">
-        
     <div class="slider owl-carousel">
       <div class="card">
          <div class="img">
@@ -130,6 +127,9 @@
             <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
             </p>
+            <button class="btn btn-outline-primary Mostrar1" type="button">Mas Informacion</button>
+            <p class="parrafo-accion01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto repudiandae assumenda quisquam cum iste numquam eligendi dolore sint hic alias suscipit enim obcaecati voluptatem, et nisi perferendis dignissimos impedit praesentium id iure porro maiores? Laudantium facere dolorem labore beatae, rerum illo veniam saepe deleniti nostrum voluptates pariatur mollitia dolores.</p>
+            <button class="btn btn-outline-primary Ocultar1" type="button">Ocultar</button>
          </div>
          
       </div>
@@ -147,6 +147,9 @@
             <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
             </p>
+            <button class="btn btn-outline-primary Mostrar2" type="button">Mas Informacion</button>
+            <p class="parrafo-accion02">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id quod saepe vitae fugit rem voluptatum voluptate quasi, veniam maiores dolore! Deleniti provident, laudantium dolores beatae ut recusandae tempore repudiandae amet adipisci corporis sed illo totam reiciendis necessitatibus dolorum! Earum perferendis minus fuga. A quae, aperiam exercitationem reprehenderit vitae ipsum?</p>
+            <button class="btn btn-outline-primary Ocultar2" type="button">Ocultar</button>
          </div>
       </div>
       <div class="card">
@@ -163,6 +166,9 @@
             <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
             </p>
+            <button class="btn btn-outline-primary Mostrar3" type="button">Mas Informacion</button>
+            <p class="parrafo-accion03">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ullam maiores sequi aliquid? Eius quisquam sapiente assumenda esse eos impedit fuga minima perspiciatis ducimus, ad dolorum sit doloremque, consequuntur numquam architecto suscipit soluta? Laudantium provident tempora, dolorum vitae delectus fugiat veritatis porro quas quaerat tenetur repudiandae ad earum maxime molestias.</p>
+            <button class="btn btn-outline-primary Ocultar3" type="button">Ocultar</button>
          </div>
       </div>
       <div class="card">
@@ -179,19 +185,31 @@
            <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
            </p>
+           <button class="btn btn-outline-primary Mostrar4" type="button">Mas Informacion</button>
+           <p class="parrafo-accion04">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, iusto facilis sapiente quae rem aperiam hic libero modi! Sapiente voluptatum perferendis culpa. Minima repellat quod rem perferendis, molestiae distinctio asperiores dolorem expedita voluptatum adipisci error est architecto corrupti consectetur, inventore eaque, a id. Recusandae fuga optio fugiat, obcaecati consequuntur quo!</p>
+           <button class="btn btn-outline-primary Ocultar4" type="button">Ocultar</button>
         </div>
      </div>
    </div>
   </div>
 </div>
    <script>
-      $(".slider").owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 4000, //4000ms = 4s;
-        autoplayHoverPause: true,
-      });
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+        }
+    })
    </script>
+   
     <!--========================================================== -->
                         <!-- FOOTER -->
     <!--========================================================== -->
