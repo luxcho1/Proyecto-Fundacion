@@ -94,6 +94,13 @@
               <div><p>Ayudar a las personas con discapacidades mentales a tener una mejor vida.</p></div>
             </figcaption>     
           </figure>
+          <figure class="snip0018" >
+            <img src="https://picsum.photos/900/900" class="img-fluid" alt="sample5"/>
+            <figcaption>
+              <div><h2>Nuestros Valores Son </h2></div>
+              <div><p>Siempre habra una mano para cualquier persona que lo necesite</p></div>
+            </figcaption>     
+          </figure>
         </div>
       </div>
     <br>
@@ -130,8 +137,7 @@
             <button class="btn btn-outline-primary Mostrar1" type="button">Mas Informacion</button>
             <p class="parrafo-accion01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iusto repudiandae assumenda quisquam cum iste numquam eligendi dolore sint hic alias suscipit enim obcaecati voluptatem, et nisi perferendis dignissimos impedit praesentium id iure porro maiores? Laudantium facere dolorem labore beatae, rerum illo veniam saepe deleniti nostrum voluptates pariatur mollitia dolores.</p>
             <button class="btn btn-outline-primary Ocultar1" type="button">Ocultar</button>
-         </div>
-         
+         </div>   
       </div>
       <div class="card">
          <div class="img">
@@ -194,22 +200,29 @@
   </div>
 </div>
    <script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:3,
-                nav:false
-            },
-        }
-    })
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        } 
+    }
+})
    </script>
-   
+   <br>
+   <br>
+
     <!--========================================================== -->
                         <!-- FOOTER -->
     <!--========================================================== -->

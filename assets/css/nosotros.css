@@ -6,9 +6,10 @@ body{
 /* Navbar */
 
 #centrar{
-  display: grid;
   place-content: center;;
 }
+
+
 #navbar a{
     color: azure;
     font-size: 23px;
@@ -110,7 +111,7 @@ figure.snip0018 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 500px;
   max-height: 500px;
   width: 100%;
@@ -223,7 +224,7 @@ figure.snip0018:hover figcaption::before {
   transition-delay: 0s;
 }
 
-/* Probando */
+/* Slider */
 .slider .card{
     flex: 1;
     margin: 0 10px;
