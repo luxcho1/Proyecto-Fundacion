@@ -20,7 +20,7 @@
     <!--========================================================== -->
     <header class="container-fluid text-center bg-danger d-flex justify-content-center">
         <h1 class="mb-2 p-1 fs-5">¿Te sientes solo? Recuerda recurrir a nuestro fono de ayuda +56969166242</h1>
-      <!---<p class="fst-italic" id="saludo"></p>-->
+      <!--<p class="fst-italic" id="saludo">hola</p>--->
     </header>
 
     <!--========================================================== -->
@@ -58,7 +58,7 @@
       </nav>
               <!--========================================================== -->
                         <!-- Carrosel de imagenes -->
-      <!--========================================================== -->
+             <!--========================================================== -->
     <main>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -68,13 +68,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/img/perro1.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/salud1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="assets/img/perro2.jpg" class="d-block w-100" alt="...">
+            <img src="assets/img/salud2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="assets/img/perro3.png" class="d-block w-100" alt="...">
+            <img src="assets/img/salud3.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -91,15 +91,25 @@
                         <!-- Texto 1 -->
       <!--========================================================== -->
         <section>
-          <div class="container" id="Titulo1">
-                <div class="row">
-                    <h1 class="pt-5 justify-content-center m-auto d-flex flex-column">
-                        Fundada en el año 2022, nuestra mision siempre fue el pensar en el bienestar de las personas, y preocuparnos sobre la salud mental. Un apartado que no esta muy tomado en cuenta en nuestro pais. Contamos con expertos que estaran dispuestos para ayudarte.
-                    </h1>
-                </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lx-4 " >
+                <button class="btn btn-dark " id="boton-modo1" onclick="darkMode()">Darkmode</button>
+                <button class="btn btn-light" id="boton-modo2"onclick="lightMode()">LightMode</button>
+              </div>
             </div>
+          </div>
         </section>
 
+
+
+        <div class="container" id="Titulo1">
+          <div class="row">
+              <h1 class="pt-5 justify-content-center m-auto d-flex flex-column">
+                  Fundada en el año 2022, nuestra mision siempre fue el pensar en el bienestar de las personas, y preocuparnos sobre la salud mental. Un apartado que no esta muy tomado en cuenta en nuestro pais. Contamos con expertos que estaran dispuestos para ayudarte.
+              </h1>
+          </div>
+      </div>
         <!--========================================================== -->
                         <!-- CARDS -->
         <!--========================================================== -->
@@ -107,15 +117,49 @@
         <section class="container-fluid">
           <h2 class="text-center" id="Titulo2">Nuestros Expertos</h2>
           <div class="row">
-              <div class="col-xl-6 container-fluid bg-danger">
-                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
+              <div class="col-xl-6 container-fluid">
+                <div class="card m-auto mt-5 mb-5" style="max-width: 900  px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
-                      <img src="assets/img/perro1.jpg" class="img-fluid rounded-start" alt="...">
+                      <img id="img-card" src="assets/img/card1.jpeg" class="img-fluid" alt="imagen1">
                     </div>
                     <div class="col-md-7">
                       <div class="card-body">
-                        <h5 class="card-title text-center fs-1">Card title</h5>
+                        <h5 class="card-title text-center fs-1">Gary Medel</h5>
+                        <p class="card-text text-center">Experto medico con 3 titulos, consciente sobre la salud mental, siempre para detectar problemas.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 ">
+                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="assets/img/card2.jpg" class="img-fluid rounded-start" alt="imagen2" id="img-card">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-1">Cristiano Ronaldo</h5>
+                        <p class="card-text text-center"> is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 ">
+                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
+                  <div class="row g-0">
+                    <div class="col-md-5">
+                      <img src="assets/img/card3.jpg" class="img-fluid rounded-start" alt="imagen3" id="img-card">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-1"></h5>
                         <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
@@ -124,45 +168,11 @@
                 </div>
               </div>
 
-              <div class="col-xl-6 bg-secondary">
+              <div class="col-xl-6">
                 <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
                   <div class="row g-0">
                     <div class="col-md-5">
-                      <img src="assets/img/perro1.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <h5 class="card-title text-center fs-1">Card title</h5>
-                        <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 bg-warning">
-                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img src="assets/img/perro1.jpg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <h5 class="card-title text-center fs-1">Card title</h5>
-                        <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xl-6 bg-black">
-                <div class="card m-auto mt-5 mb-5" style="max-width: 900px;" id="card1">
-                  <div class="row g-0">
-                    <div class="col-md-5">
-                      <img src="assets/img/perro1.jpg" class="img-fluid rounded-start" alt="...">
+                      <img src="assets/img/card4.jpg" class="img-fluid rounded-start" alt="imagen4" id="img-card">
                     </div>
                     <div class="col-md-7">
                       <div class="card-body">
@@ -178,7 +188,7 @@
 
 
           <div class="row">
-            <div class="col-xl-6 m-auto bg-secondary mb-5" style="max-width: 900px;">
+            <div class="col-xl-6 m-auto mb-5" style="max-width: 900px;">
               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -187,21 +197,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="assets/img/perro1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Etiqueta de la primera diapositiva</h5>
                       <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/perro2.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Etiqueta de la segunda diapositiva</h5>
                       <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/perro1.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Etiqueta de la tercera diapositiva</h5>
                       <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
@@ -230,17 +240,17 @@
           <div class="row">
             <h2 class="text-center" id="Titulo3">Nuestras opiniones en los medios</h2>
 
-            <div class="col-xxl-4 bg-warning">
+            <div class="col-xxl-4">
               <img class="img-fluid rounded mx-auto d-block mb-5" src="https://pbs.twimg.com/profile_images/1384306311647490048/G8sO2gPu_400x400.jpg" alt="lun">
               <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
             </div>
 
-            <div class="col-xxl-4 bg-secondary">
+            <div class="col-xxl-4">
               <img class="img-fluid rounded mx-auto d-block mb-5" src="https://descuentos.cl/wp-content/uploads/2021/06/LogoLaTercera.png" alt="lun">
               <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
             </div>
 
-            <div class="col-xxl-4 bg-danger">
+            <div class="col-xxl-4 ">
               <img class="img-fluid rounded mx-auto d-block mb-5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1280px-Logo_DuocUC.svg.png" alt="lun">
               <p class="justify-content-center fs-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet a deserunt corporis eius porro veniam ea? Inventore, provident minima delectus ipsa blanditiis sed velit voluptatibus quam impedit sunt modi consequatur suscipit, fugiat nesciunt dolorem? Quae necessitatibus quo perferendis illo. Minima molestiae nostrum non tenetur reprehenderit hic voluptatem sequi dolorum at?</p>
             </div>
@@ -248,7 +258,7 @@
         </section>
       </main>
 
-      <!--========================================================== -->
+        <!--========================================================== -->
                         <!-- FOOTER -->
         <!--========================================================== -->
 
@@ -294,13 +304,13 @@
                 <ul class="nav flex-column">
                   <h3>Mas paginas de ayuda</h3>
                   <li class="nav-item">
-                      <a class="nav-link" href="https://psicovida.cl/agenda/">Psicovida</a>
+                      <a class="links" href="https://psicovida.cl/agenda/">Psicovida</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="https://www.gob.cl/saludablemente/">Saludablemente</a>
+                      <a class="links" href="https://www.gob.cl/saludablemente/">Saludablemente</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="https://www.psiquiatrasonline.com/?gclid=CjwKCAjwj42UBhAAEiwACIhADl0vDMuFLFb9L_hT9U2zSN8dD1m3A1sGwYuTPekGmLTRSUaUprg29hoCpccQAvD_BwE">Psiquiatrasonline</a>
+                      <a class="links" href="https://www.psiquiatrasonline.com/?gclid=CjwKCAjwj42UBhAAEiwACIhADl0vDMuFLFb9L_hT9U2zSN8dD1m3A1sGwYuTPekGmLTRSUaUprg29hoCpccQAvD_BwE">Psiquiatrasonline</a>
                   </li>
               </ul>
               </div>
