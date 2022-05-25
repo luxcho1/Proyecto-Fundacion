@@ -1,3 +1,7 @@
+/*********************
+    JS CONTACTO.HTML
+**********************/
+
 const formulario = document.getElementById('form')
 const inputs = document.querySelectorAll('#form input')
 const tarea = document.querySelectorAll('#form textarea')
@@ -9,7 +13,7 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	telefono: /^\d{8,9}$/, // 8 o 9 numeros.
   rut : /^[0-9]+\-[0-9kK]$/,
   direccion:/^[a-zA-ZÀ-ÿ\s]+\#+[0-9]{2,4}$/,
   comentario: /^[a-zA-ZÀ-ÿ\s]{0,120}$/
@@ -98,6 +102,10 @@ const validarPassword2 = () =>{
       document.getElementById('password2').classList.add('is-invalid');
       document.getElementById('password2').classList.remove('is-valid');
       valides['password'] = false;
+    }else if (inPW2.value == ""){
+      document.getElementById('password2').classList.add('is-invalid');
+      document.getElementById('password2').classList.remove('is-valid');
+      valides['password'] = false;
     }else {
       document.getElementById('password2').classList.add('is-valid');
       document.getElementById('password2').classList.remove('is-invalid');
@@ -111,6 +119,10 @@ const validarCorreo2 = () =>{
   const inCorreo2 = document.getElementById('correo2')
 
   if(inCorreo.value !== inCorreo2.value){
+    document.getElementById('correo2').classList.add('is-invalid');
+    document.getElementById('correo2').classList.remove('is-valid');
+    valides['correo'] = false;
+  }else if(inCorreo2.value == ""){
     document.getElementById('correo2').classList.add('is-invalid');
     document.getElementById('correo2').classList.remove('is-valid');
     valides['correo'] = false;
@@ -185,7 +197,7 @@ const alertaInfo = () =>{
   const comen = document.getElementById('comentario').value
   const sel = form.select.value
 
-  alert('Informacion guardada\nNombre:'+nom +'\nApellido: '+ ape+
+  alert('Informacion registrada\nNombre:'+nom +'\nApellido: '+ ape+
       '\nNumero: '+num+'\nRut: '+rt+'\nDireccion: '+dir+
       '\nCorreo: '+cor+'\nContraseña: '+pass+'\nComentario: '+comen+
       '\nOpcion Seleccionada: '+sel
@@ -194,9 +206,6 @@ const alertaInfo = () =>{
 
 //Funcion limpiar formulario
 const limpiarForm = () => {
-  if(valides.select && valides.nombre && valides.apellido && valides.numero 
-    && valides.rut && valides.direccion && valides.correo
-    && valides.password && valides.comentario && valides.check ){
       form.reset();
   
       inputs.forEach((input) => {
@@ -205,16 +214,45 @@ const limpiarForm = () => {
       document.getElementById('select').classList.remove('is-valid');
       document.getElementById('comentario').classList.remove('is-valid');
 
-      }
+      
 }
 
 
 //Evita el enviar datos incompletos
 formulario.addEventListener('submit', (event) => {
   event.preventDefault();
-  alertaInfo();
-  limpiarForm();
-  
+  if(valides.select && valides.nombre && valides.apellido && valides.numero 
+    && valides.rut && valides.direccion && valides.correo
+    && valides.password && valides.comentario && valides.check ){
+      alertaInfo();
+      limpiarForm();
+    }
   }
 
 );
+
+
+/*********************
+    JS FOOTER
+**********************/
+/*
+const correoFooter = document.getElementById("exampleInputEmail1")
+
+correoFooter.forEach((input) => {
+  input.addEventListener('keyup',() => {console.log("a");})
+  input.addEventListener('blur',() => {console.log("b");})
+
+});
+
+const validarCorreoFooter = (e) => {
+  if(expresiones.correo.test(e.target.name.value)){
+    document.getElementById("exampleInputEmail1").classList.add('is-valid');
+    document.getElementById("exampleInputEmail1").classList.remove('is-invalid');
+    
+  }else {
+    document.getElementById("exampleInputEmail1").classList.add('is-invalid');
+    document.getElementById("exampleInputEmail1").classList.remove('is-valid');
+    
+  }
+}
+*/
