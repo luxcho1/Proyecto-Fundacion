@@ -29,7 +29,6 @@
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            
               <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="info.html">Sobre Nuestra Fundacion</a>
             </li>
@@ -67,13 +66,13 @@
     <!--========================================================== -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-1"> </div>
+        <div class="col-1"></div>
         <div class="col-2"> 
           <p id="parrafo2" class="fs-1">Quiénes somos</p>
-          <p id="parrafos">Desde la apertura del primer hogar en 1967, nuestra institución ha trabajado por seguir cumpliendo la misión de acoger a las personas mayores más pobres del país, entregándoles amor, cariño y los cuidados necesarios para que vivan su vejez con la dignidad que todos merecemos.</p>  
-          <p>En estos 50 años, Fundación Las Rosas se ha transformado en el establecimiento de larga estadía (ELEAM) para adultos mayores más importante del país, con 28 hogares y 2.000 residentes en promedio distribuidos entre la región de Coquimbo y Los Lagos.</p></div>
- 
-        <div class="col-3"> </div>
+          <p class="parrafos">Estudiantes de Ingieneria en informatica en la institucion de DUOC UC sede san joaquín, amantes de la programación. Actualmente estamos cursando el segundo año de nuestra carrera.</p>  
+          <p class="parrafos">Este es nuestro proyecto de programación web, en este realizamos la creacion de una pagina para una institucion mental destinada a la ayuda de las personas con este tipo de dificultades. </p>
+        </div>
+        <div class="col-3"></div>
       </div>
     </div>
     <br>
@@ -91,14 +90,14 @@
             <img src="https://picsum.photos/900/900" class="img-fluid" alt="sample5"/>
             <figcaption>
               <div><h2>Nuestra   Mision   es </h2></div>
-              <div><p>Ayudar a las personas con discapacidades mentales a tener una mejor vida.</p></div>
+              <div><p>Crear soluciones a las necesidades de las personas.</p></div>
             </figcaption>     
           </figure>
           <figure class="snip0018" >
             <img src="https://picsum.photos/900/900" class="img-fluid" alt="sample5"/>
             <figcaption>
               <div><h2>Nuestros Valores Son </h2></div>
-              <div><p>Siempre habra una mano para cualquier persona que lo necesite</p></div>
+              <div><p>Trabajo en equipo y dedicacion a la programacion </p></div>
             </figcaption>     
           </figure>
         </div>
@@ -172,7 +171,7 @@
             <p>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.
             </p>
-            <button class="btn btn-outline-primary Mostrar3" type="button">Mas Informacion</button>
+            <button class="btn btn-outline-primary Mostrar3 " type="button">Mas Informacion</button>
             <p class="parrafo-accion03">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ullam maiores sequi aliquid? Eius quisquam sapiente assumenda esse eos impedit fuga minima perspiciatis ducimus, ad dolorum sit doloremque, consequuntur numquam architecto suscipit soluta? Laudantium provident tempora, dolorum vitae delectus fugiat veritatis porro quas quaerat tenetur repudiandae ad earum maxime molestias.</p>
             <button class="btn btn-outline-primary Ocultar3" type="button">Ocultar</button>
          </div>
@@ -210,7 +209,8 @@ $('.owl-carousel').owlCarousel({
         },
         600:{
             items:3,
-            nav:false
+            nav:true,
+            loop:true
         },
         1000:{
             items:3,
@@ -234,7 +234,7 @@ $('.owl-carousel').owlCarousel({
                 <form>
                   <div class="mb-3 text-center">
                     <label for="exampleInputEmail1" class="form-label">SUSCRIBETE A NUSTRO CORREO</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="exampleInputEmail1">
                     <div class="input-group-append">
                       <button class="btn btn-primary mt-2" type="submit">Enviar</button>
                     </div>
@@ -245,8 +245,8 @@ $('.owl-carousel').owlCarousel({
 
             <div class="row">
               <div class="col-md-4 text-center" id="menu-footer">
+                <h3>Menú</h3>
                 <ul class="nav flex-column">
-                  <h3>Menú</h3>
                   <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
@@ -266,8 +266,8 @@ $('.owl-carousel').owlCarousel({
               </div>
 
               <div class="col-md-4 text-center" id="paginas-footer">
+                <h3>Mas paginas de ayuda</h3>
                 <ul class="nav flex-column">
-                  <h3>Mas paginas de ayuda</h3>
                   <li class="nav-item">
                       <a class="nav-link" href="https://psicovida.cl/agenda/">Psicovida</a>
                   </li>
@@ -281,9 +281,9 @@ $('.owl-carousel').owlCarousel({
               </div>
 
               <div class="col-md-4 text-center" id="contacto-footer">
+                <h3>Contacto</h3>
                 <ul class="nav flex-column">
                   <li class="nav-item mx-auto">
-                    <h3>Contacto</h3>
                     <p>Calle: Los Estanques 2012</p>
                     <p>Comuna: Providencia</p>
                     <p>Region: Región Metropolitana</p>
