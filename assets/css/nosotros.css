@@ -261,3 +261,89 @@ figure.snip0018:hover figcaption::before {
     text-align: justify;
     margin: 10px 0;
   }
+
+  /* Relog */
+
+.tiempo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hours, .dots, .minutes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600px;
+  padding: 0 10px;
+  line-height: 50px;
+}
+.hours, .minutes{
+  font-size: 2.5em;
+  width: 40px;
+}
+
+.dots{
+  font-size:2.5em;
+  color: antiquewhite;
+}
+
+.hours{
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+}
+
+.minutes{
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+}
+
+.right-side{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.period, .seconds{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.period{
+  transform: translateY(-20px);
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+}
+
+.seconds{
+  transform: translateY(16px);
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+}
+
+.calendar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+}
+
+.day-name, .day-number, .year, .month-name{
+  margin-left: 4px;
+  background: -webkit-linear-gradient(90deg,white,white);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+
+}
