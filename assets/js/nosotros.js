@@ -1,8 +1,42 @@
 $(document).ready(function() {
-$('#Mostrar').on('click',function(){
-    $('#parrafo-accion02').show(1000);
-});
-$('#Ocultar').on('click',function(){
-    $('#parrafo-accion02').hide(1000);
-});
-})
+    $('.parrafo-accion01').hide();
+    $('.Ocultar1').hide();
+    $('.Mostrar1').on('click',function(){
+        $('.parrafo-accion01').show();
+        $('.Ocultar1').show();  
+    });
+    $('.Ocultar1').on('click',function(){
+        $('.parrafo-accion01').hide();
+        $('.Ocultar1').hide();
+    });
+    $('.parrafo-accion02').hide();
+    $('.Ocultar2').hide();
+    $('.Mostrar2').on('click',function(){
+        $('.parrafo-accion02').show();
+        $('.Ocultar2').show();
+    });
+    $('.Ocultar2').on('click',function(){
+        $('.parrafo-accion02').hide();
+        $('.Ocultar2').hide();
+    });
+    $('.parrafo-accion03').hide();
+    $('.Ocultar3').hide();
+    $('.Mostrar3').on('click',function(){
+        $('.parrafo-accion03').show();
+        $('.Ocultar3').show();
+    });
+    $('.Ocultar3').on('click',function(){
+        $('.parrafo-accion03').hide();
+        $('.Ocultar3').hide();
+    });
+    $('.parrafo-accion04').hide();
+    $('.Ocultar4').hide();
+    $('.Mostrar4').on('click',function(){
+        $('.parrafo-accion04').show();
+        $('.Ocultar4').show();
+    });
+    $('.Ocultar4').on('click',function(){
+        $('.parrafo-accion04').hide();
+        $('.Ocultar4').hide();
+    });
+    })
