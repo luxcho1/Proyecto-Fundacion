@@ -285,7 +285,7 @@ figure.snip0018:hover figcaption::before {
 
 .dots{
   font-size:2.5em;
-  color: antiquewhite;
+  color: white;
 }
 
 .hours{
@@ -346,4 +346,9 @@ figure.snip0018:hover figcaption::before {
   -webkit-text-fill-color:transparent;
   -webkit-background-clip: text;
 
+}
+ /* Logo */
+.img-logo-nav {
+  height: 80px;
+  width: 80px;
 }
