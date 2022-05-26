@@ -81,3 +81,26 @@ $(document).ready(function() {
       document.querySelector(".year").innerHTML = year
 
     })
+
+ //Modo escuro
+ var modoOscuro = true;
+
+ function darkMode() {
+   modoOscuro = false;
+   cambiarModo();
+ }
+ function lightMode() {
+   modoOscuro = true;
+   cambiarModo();
+ }
+ 
+ const cambiarModo = () => {
+   if (modoOscuro == false){
+   var element = document.body;
+   element.className = "dark-mode";
+   }else if( modoOscuro == true){
+   var element = document.body;
+   element.className = "light-mode";
+   }
+ 
+ }
