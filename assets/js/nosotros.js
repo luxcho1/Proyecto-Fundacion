@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //
     $('.parrafo-accion01').hide();
     $('.Ocultar1').hide();
     $('.Mostrar1').on('click',function(){
@@ -40,7 +41,7 @@ $(document).ready(function() {
         $('.Ocultar4').hide();
     });
     
-// funcion relog
+// Funcion Relog
     function clock(){
         var today = new Date();
 
