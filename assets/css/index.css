@@ -15,7 +15,19 @@ body{
     max-height:39rem !important;
 }
 
-#cartas{
+#carta-1{
+    background-color: #ff9c9c;
+}
+
+#carta-2{
+    background-color: #ff9c9c;
+}
+
+#carta-3{
+    background-color: #ff9c9c;
+
+}
+#carta-4{
     background-color: #ff9c9c;
 }
 
@@ -101,6 +113,12 @@ body{
     font-weight: 500;
 }
 
-#texto-medios{
+#texto-medios-1{
+    font-weight: 500;
+}
+#texto-medios-2{
+    font-weight: 500;
+}
+#texto-medios-3{
     font-weight: 500;
 }
