@@ -231,6 +231,42 @@ formulario.addEventListener('submit', (event) => {
 
 );
 
+$('.links').click(function() {
+  $(this).prop('target','_blank');
+  alert("Cuidado estas abandonando nuestra pagina");
+});
+
+
+//Modo escuro
+var modoOscuro = true;
+
+function darkMode() {
+  modoOscuro = false;
+  cambiarModo();
+}
+function lightMode() {
+  modoOscuro = true;
+  cambiarModo();
+}
+
+const cambiarModo = () => {
+  if (modoOscuro == false){
+  var element = document.body;
+  element.className = "dark-mode";
+  document.getElementById('card').classList.add('dark-mode-card')
+  document.getElementById('card2').classList.add('dark-mode-card')
+  document.getElementById('card').classList.remove('light-mode-card')
+  document.getElementById('card2').classList.remove('light-mode-card')
+  }else if( modoOscuro == true){
+  var element = document.body;
+  element.className = "light-mode";
+  document.getElementById('card').classList.add('light-mode-card')
+  document.getElementById('card2').classList.add('light-mode-card')
+  document.getElementById('card').classList.remove('dark-mode-card')
+  document.getElementById('card2').classList.remove('dark-mode-card')
+  }
+
+}
 
 /*********************
     JS FOOTER
